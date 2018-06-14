@@ -10,7 +10,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   color: white;
 }
@@ -21,6 +21,29 @@
 
 .App-intro {
   font-size: large;
+}
+
+.Left-sider {
+  width: 15%;
+  color: white;
+}
+
+.Right-sider {
+  color: white;
+}
+
+.Content-main {
+  min-height: 60vh;
+  height:100%;
+}
+
+.App-footer {
+  height: 70px;
+  background-color: #999;
+  opacity: 0.5;
+  color: red;
+  font-weight: bolder;
+  position: relative;
 }
 
 @keyframes App-logo-spin {

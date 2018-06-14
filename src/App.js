@@ -4,21 +4,23 @@ import FirstComponent from './components/study/FirstComponent';
 import logo from './logo.svg';
 import './App.css';
 import Counter from './components/study/Counter';
+import { Layout } from 'antd';
+
+const { Header, Footer, Sider, Content } = Layout;
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button type="primary">Antd Button</Button>
-        <FirstComponent name="조미남"></FirstComponent>
-        <Counter></Counter>
+        <Layout>
+          <Header className="App-header">Header</Header>
+          <Layout>
+            <Sider className="Left-sider">Sider</Sider>
+            <Content className="Content-main">Content</Content>
+            <Sider className="Right-sider">Sider</Sider>
+          </Layout>
+          <Footer className="App-footer">Footer</Footer>
+        </Layout>
       </div>
     );
   }
