@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Button from 'antd/lib/button';
+import FirstComponent from './components/study/FirstComponent';
 import logo from './logo.svg';
 import './App.css';
+import Counter from './components/study/Counter';
 
 class App extends Component {
   render() {
@@ -15,6 +17,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Button type="primary">Antd Button</Button>
+        <FirstComponent name="조미남"></FirstComponent>
+        <Counter></Counter>
       </div>
     );
   }
