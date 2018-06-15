@@ -16,7 +16,9 @@ class App extends Component {
           <Header className="App-header">Header</Header>
           <Layout>
             <Sider className="Left-sider">Sider</Sider>
-            <Content className="Content-main">Content</Content>
+            <Content className="Content-main">
+              <Counter/>
+            </Content>
             <Sider className="Right-sider">Sider</Sider>
           </Layout>
           <Footer className="App-footer">Footer</Footer>
