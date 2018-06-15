@@ -4,6 +4,7 @@ import FirstComponent from './components/study/FirstComponent';
 import logo from './logo.svg';
 import './App.css';
 import Counter from './components/study/Counter';
+import LeftMenu from './components/study/LeftMenu';
 import { Layout } from 'antd';
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -13,9 +14,13 @@ class App extends Component {
     return (
       <div className="App">
         <Layout>
-          <Header className="App-header">Header</Header>
+          <Header className="App-header">
+            <img src={logo} alt={"logo"} className="App-logo"/> 
+          </Header>
           <Layout>
-            <Sider className="Left-sider">Sider</Sider>
+            <Sider width="100" className="Left-sider">
+              <LeftMenu/>
+            </Sider>
             <Content className="Content-main">
               <Counter/>
             </Content>
